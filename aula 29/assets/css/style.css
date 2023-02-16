@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --cor1: #042326;
+    --cor2: #0A3A40;
+    --cor3: #0F5959;
+    --cor4: #1D7373;
+    --cor5: #107361;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+}
+
+h1{
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1.5px solid #10b89996;
+}
+
+section#container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 200px;
+    height: calc(100vh - 40px); /* 20px do margin embaixo e 20 px do margin em cima */
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--cor5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+section#container > h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section#container > p {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+.div-container {
+    margin: 35px 0px;
+}
+
+form label, form input{
+    height: 40px;
+    width: 300px;
+}
+
+form input{
+    border: none;
+}
+
+form input:focus {
+    border: 2px solid var(--cor1);
+}
+
+button {
+    background-color: var(--cor1);
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor2);
+    color: white;
+}

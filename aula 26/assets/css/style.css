@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --cor1: #F2B6C6;
+    --cor2: #facaf0;
+    --cor3: #fff;
+    --cor4: #F2AEC1;
+    --cor5: #F2ACC6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+body{ 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, sans-serif;
+    /* background-color: var(--cor1); */
+    background-image: url(../image/sorvete-background\(2\).jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    text-align: end;
+}
+
+section#container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 200px;
+    height: calc(100vh - 40px); /* 20px do margin embaixo e 20 px do margin em cima */
+    margin: -34px auto 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--cor2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+section#container > h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section#container > p {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+.div-container {
+    margin: 35px 0px;
+}
+
+form label, form input{
+    height: 40px;
+    width: 300px;
+}
+
+form input{
+    border:none;
+}
+
+#conf {
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    border-radius: 50%; 
+    cursor: pointer;
+    box-sizing: border-box; 
+    
+    transform: translate(-10px, 30px); 
+}
+
+input{
+    background-color: var(--cor2);
+}
+
+form input:focus {
+    border: 2px solid var(--cor1);
+}
+
+button {
+    color: #fff;
+    background-color: #54362E;
+    border-radius: 3px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: none;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #583f37;
+    color: white;
+}
+
+#result{
+    border-radius: 3px;
+    color: black;
+    padding: 10px;
+
+    border: none;
+    margin: 20px auto;
+    width: 80%;
+    height: 40px;
+    background-color: var(--cor2);
+}
