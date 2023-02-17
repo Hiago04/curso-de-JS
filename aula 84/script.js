@@ -15,9 +15,9 @@ class ValidaCPF {
 
     geraNovoCpf() {
         const cpfSemDigitos = this.cpfLimpo.slice(0, -2); //cpfSemDigitos recebe cpf limpo sem os dois últimos dígitos
-        const digito1 = ValidaCPF.geraDigito(cpfSemDigitos);
-        const digito2 = ValidaCPF.geraDigito(cpfSemDigitos + digito1);
-        this.novoCPF = cpfSemDigitos + digito1 + digito2;
+        const digito1 = ValidaCPF.geraDigito(cpfSemDigitos); // = 0 //parametro = 070987720
+        const digito2 = ValidaCPF.geraDigito(cpfSemDigitos + digito1); // = 3 //parametro = 0709877200
+        this.novoCPF = cpfSemDigitos + digito1 + digito2; // 
     }
 
     static geraDigito(cpfSemDigitos) {
