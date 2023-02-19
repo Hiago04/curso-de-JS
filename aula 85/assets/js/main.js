@@ -42,6 +42,7 @@ class ValidaFormulario {
 
     validaCPF(campo) {
         const cpf = new ValidaCPF(campo.value);
+        //chamei a a func que validaCPF, que está em outro arquivo. os arquivos estão linkados através do script de HTML
 
         if(!cpf.valida()) {
             this.criaErro(campo, 'CPF inválido.')
