@@ -71,9 +71,9 @@ button {
     text-transform: uppercase;
     font-weight: bolder;
     border: none;
-    margin-top: 20px;
-    width: 80%;
-    height: 40px;
+    margin-top: 100px;
+    width: 40%;
+    height: 35px;
     cursor: pointer;
 }
 
