@@ -54,13 +54,19 @@ class ValidaCPF {
 document.addEventListener('click', function (e) {
     let el = e.target
     if (el === botao) {
-        let num = () => String(Math.floor(Math.random() * (99999999999 - 0) + 0))
-        let cpf = num().length === 10 ? `0${num()}` : num();
-        let verifica = new ValidaCPF(cpf);
+        let cpf = () => {
+           let num = String(Math.floor(Math.random() * (99999999999 - 0) + 0))
+           while(num.length < 11){
+            num = num.split('')
+            num.unshift('0')
+            num = num.join('')
+           }
+           return num
+        }
+        let verifica = new ValidaCPF(cpf());
 
         while (!verifica.valida()) {
-            cpf = num().length === 10 ? `0${num()}` : num();
-            verifica = new ValidaCPF(cpf);
+            verifica = new ValidaCPF(cpf());
         }
         result.innerHTML = verifica.cpfLimpo;
     };
