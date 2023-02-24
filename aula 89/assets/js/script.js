@@ -7,6 +7,7 @@ const request = obj => {
         xhr.addEventListener('load', () => {
             if (xhr.status >= 200 && xhr.status < 300) {
                 resolve(xhr.responseText);
+                console.log(xhr.responseText);
             } else {
                 reject(xhr.statusText)
             }
