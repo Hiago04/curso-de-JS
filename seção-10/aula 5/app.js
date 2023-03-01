@@ -10,14 +10,14 @@ const ler = require('./modules/read');
 //     { nome: 'Eduardo' }
 // ]
 // const json = JSON.stringify(pessoas, '', 2) //transforma em json
-//escreve(caminhoArquivo, json)
+// escreve(caminhoArquivo, json)
 
 
 async function leArquivo(caminho) {
-   const dados = await ler(caminho);
-   console.log(dados); //os dados estão em formato json
-   console.log();
-   //renderizaDados(dados);
+    const dados = await ler(caminho);
+    console.log(dados); //os dados estão em formato json
+    console.log();
+    renderizaDados(dados);
 }
 
 
