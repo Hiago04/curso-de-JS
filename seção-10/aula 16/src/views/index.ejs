@@ -1,0 +1,33 @@
+<%- include('./includes/head.ejs') %>
+
+    <section id="container">
+        <h1> Titulo normal
+            
+            <%# numeros.forEach(element => { %>
+            <!-- <%#= element %>  <br> -->
+            <%# }) %>
+
+
+            <!-- <#% if(typeof titulo !== 'undefined') { %>
+                <%#-titulo%>
+            <%# } else { %>
+                O título não foi enviado.
+                <%# } %> -->
+
+
+             <!-- <%#= titulo %><br>:exibe extamente o que você
+            digitar -->
+            <!-- <%#- titulo %>:executa o que você digitar -->
+
+
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex impedit aut aspernatur optio temporibus debitis, blanditiis et ipsam voluptates tempora cum id distinctio provident facilis, nobis labore libero ratione?</p>
+
+        <form action="/" method="post">
+        <label>Cliente</label>
+        <input type="text" name="cliente" >
+        </form>
+
+    </section>
+    
+<%- include('./includes/footer') %>
