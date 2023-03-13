@@ -60,7 +60,7 @@ class Login {
         this.cleanUp();
         //Validação
         //O email precisa ser válido
-        if (!validator.isEmail(this.body.email)) {
+        if (!validator.isEmail(this.body.email)) { //verifica se o email passado é um email.
             this.errors.push('E-mail inválido')
         }
         //A senha precisa ter de 3 a 50 caracteres
@@ -72,7 +72,8 @@ class Login {
     cleanUp() {
         for (const key in this.body) {
             if (typeof this.body[key] !== 'string') {
-                this.body[key] = '';
+                this.body[key] = ''; //se o valor passado nos inputs forem diferentes de string
+                // o valor da chave vai ser igual a nada.
             }
         }
 
