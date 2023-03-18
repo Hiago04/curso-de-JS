@@ -11,14 +11,12 @@ class ValidaFormulario {
     }
 
     handleSubmit(e) {
-        e.preventDefault();
         const camposValidos = this.camposSaoValidos();
         const senhasValidas = this.senhasSaoValidas();
 
         if(camposValidos && senhasValidas)   {
-            alert('Formulário enviado.')
+            e.preventDefault();
         }
-
     }
 
     senhasSaoValidas() {
