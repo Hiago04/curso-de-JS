@@ -2,3 +2,5 @@ modelo/
 pasta/
 xtra/
 .env
+notas.txt
+node_modules
